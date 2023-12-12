@@ -1,0 +1,120 @@
+/* Importing Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Resetting default styles and applying Poppins font to all elements */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Styling the body with white text on a dark background */
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: #20262E;  
+}
+
+/* Creating a wave SVG background for the entire body */
+#full-body {
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+
+/* Adding a background image with opacity to the body */
+#full-body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url('https://wallpapercave.com/wp/wp3104899.jpg') bottom center/cover no-repeat;
+    z-index: -1;
+    opacity: 0.7; /* Initial opacity */
+}
+
+/* Changing background opacity when search is active */
+#full-body.search-active::before {
+    opacity: 0.4; /* Opacity when search is active */
+}
+
+/* Styling the header heading section */
+#heading {
+    margin-top: 100px;
+}
+
+/* Adding a shadow to the header navigation bar */
+#nav {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #ff7b00; /* Header navigation bar background color */
+}
+
+/* Styling the header search bar section */
+#search-bar {
+    max-width: 600px;
+}
+
+/* Styling the search input within the search bar */
+#search-bar input {
+    height: 50px;
+    border-radius: 20px;
+}
+
+/* Styling the meal card with a glassmorphism effect */
+#card {
+    background-color: black;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* Styling for meal details container */
+#meal-details {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    background: #20262E url('https://motionarray.imgix.net/preview-593600-SeGvXAA6cscNaEr2-large.jpg?w=3840&q=60&fit=max&auto=format') center center/cover no-repeat;
+}
+
+/* Styling for meal header section */
+#meal-header {
+    width: 70%;
+    margin: auto;
+}
+
+/* Styling for meal thumbnail image */
+#meal-thumbail img {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+/* Styling for meal details section */
+#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+/* Styling for meal instruction section */
+#meal-instruction {
+    margin: auto;
+    text-align: center;
+}
+
+/* Styling for favorites offcanvas */
+#favourites-body {
+    background-color: #212529;
+}
