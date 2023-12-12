@@ -35,10 +35,7 @@ bashCopy code
 npm install
 
 Usage
-1.	Start the application:
-bashCopy code
-npm start 
-2.	Open your browser and visit http://localhost:3000.
+1.	Double click on index.html file.
 3.	Explore the Meal App and enjoy searching for your favorite meals!
 
 
